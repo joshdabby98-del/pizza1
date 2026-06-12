@@ -1,0 +1,194 @@
+body{
+  margin:0;
+  font-family:Inter,sans-serif;
+  color:white;
+  background:#0b0c10;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(200,162,74,0.25), transparent 45%),
+    radial-gradient(circle at 80% 60%, rgba(80,140,255,0.25), transparent 45%);
+  filter:blur(80px);
+  z-index:-1;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:blur(10px);
+}
+
+.logo{
+  font-family:"Playfair Display",serif;
+  color:#c8a24a;
+}
+
+.fb{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-family:"Playfair Display",serif;
+  font-size:54px;
+}
+
+.btn{
+  padding:12px 16px;
+  margin:5px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.primary{
+  background:#c8a24a;
+  color:black;
+}
+
+.ghost{
+  border:1px solid white;
+  color:white;
+}
+
+#menu{
+  padding:80px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+h2{
+  font-family:"Playfair Display",serif;
+}
+
+.tabs button{
+  margin:5px;
+  padding:10px 14px;
+  border-radius:999px;
+  border:none;
+  cursor:pointer;
+  background:rgba(255,255,255,0.08);
+  color:white;
+}
+
+#menuGrid{
+  display:flex;
+  gap:12px;
+
+  overflow-x:auto;
+  overflow-y:hidden;
+
+  padding-top:20px;
+
+  scroll-behavior:smooth;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.card{
+  min-width:240px;
+  background:rgba(255,255,255,0.06);
+  padding:16px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.1);
+}
+.page{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hours-card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:20px;
+  border-radius:16px;
+  margin:20px 0;
+  max-width:400px;
+  width:100%;
+}
+
+.hours-card p{
+  margin:8px 0;
+}
+body{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* keep header full width */
+header{
+  width:100%;
+}
+
+/* force sections to stay centered and not drift left */
+.hero,
+#menu,
+.page{
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+}
+.about{
+  max-width:1000px;
+  margin:0 auto;
+  padding:60px 20px;
+  text-align:left;
+}
+
+.about h2{
+  font-family:"Playfair Display",serif;
+  font-size:34px;
+  margin-bottom:15px;
+}
+
+.about p{
+  line-height:1.7;
+  color:rgba(255,255,255,0.75);
+  margin-bottom:15px;
+}
+#status{
+  margin-top:10px;
+  font-weight:600;
+  padding:6px 12px;
+  border-radius:8px;
+  display:inline-block;
+}
+
+.open{
+  color:#00ff88;
+  border:1px solid rgba(0,255,136,0.4);
+  background:rgba(0,255,136,0.08);
+}
+
+.closed{
+  color:#ff4d4d;
+  border:1px solid rgba(255,77,77,0.4);
+  background:rgba(255,77,77,0.08);
+}
