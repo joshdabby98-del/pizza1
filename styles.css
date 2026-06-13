@@ -81,7 +81,13 @@ header{
 
 .hero h1{
   font-family:"Playfair Display",serif;
-  font-size:54px;
+  font-size:44px;
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size:34px;
+  }
 }
 
 .btn{
